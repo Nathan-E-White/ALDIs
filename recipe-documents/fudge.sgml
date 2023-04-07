@@ -1,0 +1,40 @@
+<!DOCTYPE recipe SYSTEM "recipe.dtd">
+<recipe type="dessert" preptime="30" servings="10">
+    <title>Homemade Fudge</title>
+    <ingredients>
+        <!-- Confectioner's Sugar -->
+        <ingredient>
+            <item id="1">sugar</item>
+            <amount measurement="weight" system="imperial">
+                <quantity>
+                    <unit>pound</unit>
+                    <magnitude>1</magnitude>
+                </quantity>
+            </amount>
+        </ingredient>
+        <!-- Cocoa Powder -->
+        <ingredient>
+            <item id="2">cocoa</item>
+            <amount measurement="volume" system="imperial">
+                <quantity>
+                    <unit>cups</unit>
+                    <magnitude>1/2</magnitude>
+                </quantity>
+            </amount>
+        </ingredient>
+        <!-- Salt -->
+        <!-- Butter -->
+        <!-- Milk -->
+        <!-- Vanilla -->
+        <!-- Chopped nuts -->
+    </ingredients>
+    <instructions>
+        <step id="1">Mix it up</step>
+        <step id="2">Add butter</step>
+        <step id="3">Microwave on high 2 minutes</step>
+        <step id="4">Stir until smooth</step>
+        <step id="5">Blend in the vanilla</step>
+        <step id="6" necessary="no">Add chopped nuts</step>
+        &pour-chill-cut;
+    </instructions>
+</recipe>

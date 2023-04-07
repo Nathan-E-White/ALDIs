@@ -1,0 +1,248 @@
+{
+  "id": "9251493f-82c1-4a92-92ce-95ddf6c534ad",
+  "version": "2.0",
+  "name": "Aldis-Scraper",
+  "url": "https://shop.aldi.us/",
+  "tests": [{
+    "id": "5c13cd13-6fcc-4490-9bbd-f7db3156182f",
+    "name": "Login",
+    "commands": [{
+      "id": "308f4118-6ca6-4288-9baf-05a5c279df60",
+      "comment": "",
+      "command": "open",
+      "target": "https://shop.aldi.us/store/aldi/storefront",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "60fd5fdc-bb55-427b-bc51-0d0464c9f36b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "641x809",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3cc10ff3-48fe-47eb-83d4-1b2227318172",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.css-1veifgg",
+      "targets": [
+        ["css=.css-1veifgg", "css:finder"],
+        ["xpath=//div[@id='commonHeader']/div[2]/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/store/')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "85d26c61-1ea1-41af-9fb5-d6ff99f621ce",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.css-1veifgg",
+      "targets": [
+        ["css=.css-1veifgg", "css:finder"],
+        ["xpath=//div[@id='commonHeader']/div[2]/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/store/')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "55d33ba3-2fb3-4708-9607-35fbceda2e52",
+      "comment": "",
+      "command": "click",
+      "target": "css=.css-1i3qizy > svg",
+      "targets": [
+        ["css=.css-1i3qizy > svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "d7e0a95a-efb2-4c94-9ab1-c8048116b4c6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.css-sqr6mx-HeaderGuest .css-197erm7-MenuButton",
+      "targets": [
+        ["css=.css-sqr6mx-HeaderGuest .css-197erm7-MenuButton", "css:finder"],
+        ["xpath=//div[@id='id-2']/nav/ul/div/li/button/span/span", "xpath:idRelative"],
+        ["xpath=//li/button/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a6ac8c62-a247-4813-9f92-aadf79e7d983",
+      "comment": "",
+      "command": "type",
+      "target": "id=id-22",
+      "targets": [
+        ["id=id-22", "id"],
+        ["name=email", "name"],
+        ["css=#id-22", "css:finder"],
+        ["xpath=//input[@id='id-22']", "xpath:attributes"],
+        ["xpath=//body[@id='store']/div[9]/div/div/div/div/div[2]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/input", "xpath:position"]
+      ],
+      "value": "nwhitemizzou@gmail.com"
+    }, {
+      "id": "c103dae8-743e-4d40-9350-2214c4c950e4",
+      "comment": "",
+      "command": "type",
+      "target": "id=id-24",
+      "targets": [
+        ["id=id-24", "id"],
+        ["name=password", "name"],
+        ["css=#id-24", "css:finder"],
+        ["xpath=//input[@id='id-24']", "xpath:attributes"],
+        ["xpath=//body[@id='store']/div[9]/div/div/div/div/div[2]/div/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "4ZTLn.xP24SXpUz"
+    }, {
+      "id": "88ac1986-f4e2-4430-814b-f9b83bff3e37",
+      "comment": "",
+      "command": "click",
+      "target": "id=id-22",
+      "targets": [
+        ["id=id-22", "id"],
+        ["name=email", "name"],
+        ["css=#id-22", "css:finder"],
+        ["xpath=//input[@id='id-22']", "xpath:attributes"],
+        ["xpath=//body[@id='store']/div[9]/div/div/div/div/div[2]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "244918ac-9753-40fb-9865-bb01ae04358d",
+      "comment": "",
+      "command": "click",
+      "target": "id=id-24",
+      "targets": [
+        ["id=id-24", "id"],
+        ["name=password", "name"],
+        ["css=#id-24", "css:finder"],
+        ["xpath=//input[@id='id-24']", "xpath:attributes"],
+        ["xpath=//body[@id='store']/div[9]/div/div/div/div/div[2]/div/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "039eae18-9f7f-42e4-b966-c13295a417a0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.css-z7y2wn",
+      "targets": [
+        ["css=.css-z7y2wn", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//body[@id='store']/div[9]/div/div/div/div/div[2]/div/form/div[4]/button", "xpath:idRelative"],
+        ["xpath=//form/div[4]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9d7ea68f-a184-4c77-8319-a756e37a5196",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.css-1aw6l9u",
+      "targets": [
+        ["css=.css-1aw6l9u", "css:finder"],
+        ["xpath=(//img[@alt='Shop Now'])[2]", "xpath:img"],
+        ["xpath=//div[@id='store-wrapper']/div/div/a/img[2]", "xpath:idRelative"],
+        ["xpath=//img[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b748735d-d23f-4ad3-a9c1-808aa0a88169",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.css-1aw6l9u",
+      "targets": [
+        ["css=.css-1aw6l9u", "css:finder"],
+        ["xpath=(//img[@alt='Shop Now'])[2]", "xpath:img"],
+        ["xpath=//div[@id='store-wrapper']/div/div/a/img[2]", "xpath:idRelative"],
+        ["xpath=//img[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "37913d29-c432-49ac-816c-1a3b3a3ebe4f",
+    "name": "Logout",
+    "commands": [{
+      "id": "90a4e9d8-e788-4b6f-a7b7-929c85c78ab2",
+      "comment": "",
+      "command": "open",
+      "target": "https://shop.aldi.us/store/aldi/storefront",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "92426c53-fbba-42b2-8957-fac07d72d232",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.css-1aw6l9u",
+      "targets": [
+        ["css=.css-1aw6l9u", "css:finder"],
+        ["xpath=(//img[@alt='Shop Now'])[2]", "xpath:img"],
+        ["xpath=//div[@id='store-wrapper']/div/div/a/img[2]", "xpath:idRelative"],
+        ["xpath=//img[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1fecdbf0-f9b5-4d24-8377-92acf6e2b677",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.css-1aw6l9u",
+      "targets": [
+        ["css=.css-1aw6l9u", "css:finder"],
+        ["xpath=(//img[@alt='Shop Now'])[2]", "xpath:img"],
+        ["xpath=//div[@id='store-wrapper']/div/div/a/img[2]", "xpath:idRelative"],
+        ["xpath=//img[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c7af0279-3746-4b5f-b75f-6501b68d930c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.css-1i3qizy > svg",
+      "targets": [
+        ["css=.css-1i3qizy > svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "9bbb7103-0e62-464a-8107-79bc6ae5e22c",
+      "comment": "",
+      "command": "chooseOkOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "921a1574-2434-4f39-8cfa-b81ff7c18ff3",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(11) .css-1ebckir-MenuLink",
+      "targets": [
+        ["css=li:nth-child(11) .css-1ebckir-MenuLink", "css:finder"],
+        ["xpath=//div[@id='id-2']/nav/ul/div[2]/li[3]/a/span[2]", "xpath:idRelative"],
+        ["xpath=//li[3]/a/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Log out')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c0a559f6-19fe-46fa-87fe-9e96c2ac7a22",
+      "comment": "",
+      "command": "assertConfirmation",
+      "target": "Are you sure you want to log out?",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "336765f3-6e2d-4414-bec8-a63e0b8ffaf3",
+      "comment": "",
+      "command": "webdriverChooseOkOnVisibleConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "8c7d929e-ac55-4ba1-84eb-55575dcb647b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.google.com/", "https://shop.aldi.us/"],
+  "plugins": []
+}

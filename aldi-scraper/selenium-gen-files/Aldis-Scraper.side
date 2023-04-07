@@ -1,0 +1,211 @@
+{
+  "id": "9251493f-82c1-4a92-92ce-95ddf6c534ad",
+  "version": "2.0",
+  "name": "Aldis-Scraper",
+  "url": "",
+  "tests": [{
+    "id": "37913d29-c432-49ac-816c-1a3b3a3ebe4f",
+    "name": "logout.Logout",
+    "commands": [{
+      "id": "90a4e9d8-e788-4b6f-a7b7-929c85c78ab2",
+      "comment": "",
+      "command": "open",
+      "target": "https://shop.aldi.us/store/aldi/storefront",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "92426c53-fbba-42b2-8957-fac07d72d232",
+      "comment": "",
+      "command": "//mouseOver",
+      "target": "css=.css-1aw6l9u",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1fecdbf0-f9b5-4d24-8377-92acf6e2b677",
+      "comment": "",
+      "command": "//mouseOut",
+      "target": "css=.css-1aw6l9u",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "db271f1f-07ee-466b-adca-a3e4eb203b93",
+      "comment": "",
+      "command": "//mouseOver",
+      "target": "css=.css-1i3qizy > svg",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c7af0279-3746-4b5f-b75f-6501b68d930c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.css-1i3qizy > svg",
+      "targets": [
+        ["css=.css-1i3qizy > svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "9bbb7103-0e62-464a-8107-79bc6ae5e22c",
+      "comment": "",
+      "command": "chooseOkOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "921a1574-2434-4f39-8cfa-b81ff7c18ff3",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(11) .css-1ebckir-MenuLink",
+      "targets": [
+        ["css=li:nth-child(11) .css-1ebckir-MenuLink", "css:finder"],
+        ["xpath=//div[@id='id-2']/nav/ul/div[2]/li[3]/a/span[2]", "xpath:idRelative"],
+        ["xpath=//li[3]/a/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Log out')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c0a559f6-19fe-46fa-87fe-9e96c2ac7a22",
+      "comment": "",
+      "command": "assertConfirmation",
+      "target": "Are you sure you want to log out?",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "336765f3-6e2d-4414-bec8-a63e0b8ffaf3",
+      "comment": "",
+      "command": "webdriverChooseOkOnVisibleConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "edb38833-df21-4ad7-8d53-12c38419176a",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "ae111b9c-50bb-44cc-8f88-abff35350475",
+    "name": "login.Login",
+    "commands": [{
+      "id": "40e790a6-932c-4972-afc2-d39f1b3bc318",
+      "comment": "Open the window https://shop.aldi.us/",
+      "command": "open",
+      "target": "https://shop.aldi.us/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4a150c39-abff-4e2e-ae8b-5dca3036cce3",
+      "comment": "Resize the window",
+      "command": "setWindowSize",
+      "target": "606x809",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e85971d8-7be5-4ae1-8e78-726c3d52d3a9",
+      "comment": "Click on the login button",
+      "command": "click",
+      "target": "xpath=(//a[contains(text(),'Log In')])[2]",
+      "targets": [
+        ["linkText=Log In", "linkText"],
+        ["css=.mobile-float-right > .log-in", "css:finder"],
+        ["xpath=(//a[contains(text(),'Log In')])[2]", "xpath:link"],
+        ["xpath=//div[@id='navigation']/div[2]/div/nav/a[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#login')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div/nav/a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "70b94490-23c9-424e-b0dc-f0268063a41f",
+      "comment": "Click on the email entry form",
+      "command": "click",
+      "target": "name=email",
+      "targets": [
+        ["id=id-lbkj37", "id"],
+        ["name=email", "name"],
+        ["css=#id-lbkj37", "css:finder"],
+        ["xpath=//input[@id='id-lbkj37']", "xpath:attributes"],
+        ["xpath=//div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ed934fca-0ded-41ca-a157-3cd3f7ed7744",
+      "comment": "Type in the login email address",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["id=id-lbkj37", "id"],
+        ["name=email", "name"],
+        ["css=#id-lbkj37", "css:finder"],
+        ["xpath=//input[@id='id-lbkj37']", "xpath:attributes"],
+        ["xpath=//div/div/div/input", "xpath:position"]
+      ],
+      "value": "nwhitemizzou@gmail.com"
+    }, {
+      "id": "bb1c5207-1af6-414e-b5d9-0504c5b2f21c",
+      "comment": "Click on the password entry form",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["id=id-i3afv5", "id"],
+        ["name=password", "name"],
+        ["css=#id-i3afv5", "css:finder"],
+        ["xpath=//input[@id='id-i3afv5']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e3ae6615-81c1-4bfa-8e2f-dbd0aa4e5650",
+      "comment": "Type in the password",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["id=id-i3afv5", "id"],
+        ["name=password", "name"],
+        ["css=#id-i3afv5", "css:finder"],
+        ["xpath=//input[@id='id-i3afv5']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "4ZTLn.xP24SXpUz"
+    }, {
+      "id": "211ec1c2-51dc-4d42-a97e-f2d40f2080ac",
+      "comment": "login.Login to the site",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Log in')]",
+      "targets": [
+        ["css=.css-em7yaz", "css:finder"],
+        ["xpath=//div[4]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "a357129f-3dc9-4259-a864-3170e6f743f3",
+    "name": "Item-Multi-Colored-Peppers",
+    "commands": [{
+      "id": "d590d486-18b4-43d9-9cd4-8be241482436",
+      "comment": "",
+      "command": "open",
+      "target": "https://shop.aldi.us/store/items/item_45841631805?v4_item_id=items_23648-26274165",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "73aeddde-f382-48fb-95c3-26bd5021a39b",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "8c7d929e-ac55-4ba1-84eb-55575dcb647b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.google.com/", "https://shop.aldi.us/"],
+  "plugins": []
+}

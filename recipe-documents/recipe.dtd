@@ -1,0 +1,25 @@
+<!ELEMENT recipe            - - (title, ingredients, instructions)>
+<!ATTLIST recipe
+        type        CDATA       #IMPLIED
+        servings    NUMBER      #IMPLIED
+        preptime    NUMBER      #IMPLIED
+>
+<!ELEMENT title         -           -           (#PCDATA)>
+<!ELEMENT ingredients   -           -           (ingredient+)>
+<!ELEMENT instructions  -           -           (step+)>
+<!ELEMENT ingredient    -           -           (item, amount)>
+<!ELEMENT step   - - (#PCDATA)>
+<!ATTLIST step          necessary   (yes|no)    yes>
+<!ATTLIST step   id NMTOKEN #REQUIRED>
+<!ELEMENT item   - - (#PCDATA)>
+<!ATTLIST item   id NUMBER #REQUIRED>
+<!ELEMENT amount - - (quantity)>
+<!ATTLIST amount measurement (weight|volume) weight>
+<!ATTLIST amount system      (metric|imperial) imperial>
+<!ELEMENT quantity      -           -           (unit, magnitude)>
+<!ELEMENT unit          - - (#PCDATA)>
+<!ELEMENT magnitude     - - (#PCDATA)>
+<!ENTITY pour-chill-cut "
+        <instruction>Pour into a nonstick pan and chill until hardened.</instruction>
+        <instruction>Cut into 2 inch squares.</instruction>"
+>
